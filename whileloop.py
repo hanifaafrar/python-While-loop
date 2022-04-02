@@ -1,7 +1,9 @@
-number = int(input('Enter No: \n'))
-n = 0
-while n <= number:
-    if number % 3 == 0:
-        print(n)
-    n = n + 3
-print('End')
+name = input('name')
+name1 = len(name)
+index = 0
+while index < name1:
+    if name[index] == 'a':
+        print(name[index])
+    index = index + 1
+
+
