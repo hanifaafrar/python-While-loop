@@ -9,31 +9,18 @@
 #  8    0    2    0   == 10
 
 import math
+number = int(input('Enter Number: \n'))
 total = 0
+i = 0
 
-rem = 1010 % 10
-number = 1010 // 10
-value = rem * int(math.pow(2,0))
-total = total + value
-print(rem, number, value, total)
-
-rem = 101 % 10
-number = 101 // 10
-value = rem * int(math.pow(2,1))
-total = total + value
-print(rem, number, value, total)
-
-rem = 10 % 10
-number = 10 // 10
-value = rem * int(math.pow(2,2))
-total = total + value
-print(rem, number, value, total)
-
-rem = 1 % 10
-value = rem * int(math.pow(2,3))
-total = total + value
-number = 1 // 10
-print(rem, number, value, total)
+while number > 0:
+    rem = number % 10
+    value = rem * int(math.pow(2,i)) # used the "i" to add the power #
+    total = total + value
+    number = number // 10
+    i = i + 1
+print(total)
+    #print(rem, number, value, total)
 
 
 # this program is very long so, here we want a loop
