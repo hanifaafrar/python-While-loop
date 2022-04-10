@@ -8,11 +8,15 @@
 #number = number(1) // 2  == 0
 
 number = int(input('Enter Number: \n'))
+word = ' '
 
 while number > 0:
     rem = number % 2
+    word = str(rem) + word
     number = number // 2
-    print(rem, end='')
+    #print(rem, end='')
+print(word)
+
 
 
 
